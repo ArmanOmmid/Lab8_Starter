@@ -10,8 +10,8 @@ I would fit my automated tests in my Recipe project developement pipleine **with
 No. For testing to check if a specific function is returning the correct output we should at most run the test suite that involves the function or more realistically test on the function itself directly. It's unnecessary to do end to end. 
 
 #### 3) Would you use a unit test to test the “message” feature of a messaging application? Why or why not? For this question, assume the “message” feature allows a user to write and send a message to another user.
-No. No using a single unit test to test a feature like this is inappropriate because 
+No. Using a unit test to test a feature like this is inappropriate because the funcitonality of this feature is likely emergent from multiple components for the feature to be able to both write and send a message to another user and unit testing cannot test how these components interact at this level.  
 
 #### 4) Would you use a unit test to test the “max message length” feature of a messaging application? Why or why not? For this question, assume the “max message length” feature prevents the user from typing more than 80 characters.
-Yes. Because this feature 
+Yes. Using a unit test to test this feature is appropriate because this is small scale debugging for a feature that has a very encapsulated/isolated property because its just checking the length of a message and this feature can't be reduced much further in components making it a "unit" of sorts. 
 
